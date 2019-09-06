@@ -14,11 +14,8 @@ $(document).ready(function () {
         });
 
         let price = $("input[name='price']").val();
-        console.log(price);
         let evaluate = $('#evaluate option:selected').val();
-        console.log(evaluate);
         let numberPeople = $("input[name='people']").val();
-        console.log(numberPeople);
 
         if(!price) {
             $("input[name='price']").siblings("label").css({"display": "block"});
@@ -32,11 +29,10 @@ $(document).ready(function () {
 
 
         let total = (price*evaluate)/numberPeople;
-        console.log(total);
         $('#total').html(total);
         
-
     })
 
+    
    
 });
