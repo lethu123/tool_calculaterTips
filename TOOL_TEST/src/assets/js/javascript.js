@@ -29,7 +29,7 @@ function submit1() {
     }
     
     if(price && evaluate && numberPeople) {
-        var total = (price * evaluate) / numberPeople;
+        var total = Math.round(((price * evaluate) / numberPeople) * 100)/100;
         getMyEle('total').innerHTML = total;
     }
 
